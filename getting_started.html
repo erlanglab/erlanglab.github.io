@@ -1,0 +1,52 @@
+---
+layout: page
+title: Getting started
+subtitle: How to build and use the erlangpl script
+---
+			<section>
+				<h4>Building</h4>
+				<p>The Erlang Performance Lab tool (erlangpl for short) can be started using escript or as a regular Erlang release. First we need to build it.</p>
+
+        <pre><code>$ git clone git@github.com:erlanglab/erlangpl.git
+$ cd erlangpl
+$ make rebar
+$ make
+$ ./bootstrap
+</code></pre>
+      </section>
+      <section>
+          <h4>Running erlangpl script</h4>
+          <p>The erlangpl shell script is a self-contained escript, which can be started from a command line as long as you have Erlang/OTP installed.</p>
+
+          <pre><code>$ ./erlangpl -h
+
+Usage: erlangpl [-n &lt;node&gt;] [-c &lt;cookie&gt;] [-p &lt;plugin&gt;] [-h]
+                [-v &lt;verbose&gt;] [-P &lt;port&gt;] [-V] [-s &lt;sname&gt;] [-l &lt;name&gt;]
+
+  -n, --node     Monitored node name
+  -c, --cookie   Overwrite ~/.erlang.cookie
+  -p, --plugin   Path to plugins
+  -h, --help     Show the program options
+  -v, --verbose  Verbosity level (-v, -vv, -vvv)
+  -P, --port     HTTP and WS port number
+  -V, --version  Show version information
+  -s, --sname    Start with a shortname
+  -l, --name     Start with a longname, default erlangpl@127.0.0.1
+
+$ ./erlangpl -n testnode@127.0.0.1 -c YOURCOOKIE
+</code></pre>
+
+          <p>Once started, try visiting http://localhost:8000/</p>
+      </section>
+      <section>
+          <h4>Running development release</h4>
+          <p>You can also start the tool as a regular Erlang release and connect to its console to debug the tool itself.</p>
+
+          <pre><code>$ make
+$ rebar -f generate
+$ ./rel/erlangpl/bin/erlangpl console node=testnode@127.0.0.1 cookie=YOURCOOKIE
+</code></pre>
+      </section>
+      <section>
+          <p>Have fun!</p>
+      </section>
