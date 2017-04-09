@@ -31,7 +31,8 @@ layout: landing
 
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
+            <!-- DASHBOARD -->
+            <section class="spotlight">
 							<div class="image"><img src="images/erlanglab_dashboard.png" alt="" /></div><div class="content">
 								<h2>Dashboard</h2>
 								<p>Gives high level overview of the current system throughput,
@@ -43,27 +44,44 @@ layout: landing
                 </p>
 							</div>
 						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/erlanglab_st.png" alt="" /></div><div class="content">
+
+            <!-- MESSAGE PASSING -->
+            <section class="spotlight">
+							<div class="image"><img src="images/erlanglab_message_passing.png" alt="" /></div><div class="content">
 								<h2>Message passing graph</h2>
 								<p>In Erlang-based systems processes share data through message passing.
                     If certain processes receive more messages than they can handle,
                     their inbox queue starts growing. Over time it can lead to bottlenecks.
                     The graph visualises which processes communicate extensively
-                    and highlights them in red, so you know which ones to click and inspect.
-                    You can even put on a pair of 3D glasses
-                    and admire the beauty of complex systems visualisations.
+                    allowing you to easy spot key places slowing down your application.
                 </p>
 							</div>
 						</section>
+
+            <!-- TRAFFIC -->
 						<section class="spotlight">
 							<div class="image"><img src="images/erlanglab_traffic.png" alt="" /></div><div class="content">
 								<h2>Traffic graph</h2>
-								<p>
-                    Gaining visibility into network traffic in distributed systems is of great importance as it helps to understand the behaviour of the entire system, which can consist of more than one Erlang node.
-                    Graphical representation of clustering helps grasp the inter-node traffic patterns and allows displaying traffic data on a graph of nodes.</p>
+								<p>Gaining visibility into network traffic in distributed systems is of great
+                    importance as it helps to understand the behaviour of the entire system,
+                    which can consist of more than one Erlang node.
+                    Graphical representation of clustering helps grasp the inter-node traffic
+                    patterns and allows displaying traffic data on a graph of nodes.
+                </p>
 							</div>
 						</section>
+
+            <!-- SUPERVISION TREE  -->
+            <!-- <section class="spotlight">
+							   <div class="image"><img src="images/erlanglab_st.png" alt="" /></div><div class="content">
+								 <h2>Supervision tree</h2>
+								 <p>May help you understand internal structure of your application.
+                 This view allows you to monitor spawns and exits of your processes.
+                 Visualizing failure and recovery can help you to understand relations
+                 between workers and supervisors.
+                 </p>
+							   </div>
+						     </section> -->
 					</section>
 
 				<!-- CTA -->
