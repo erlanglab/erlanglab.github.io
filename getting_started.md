@@ -7,7 +7,7 @@ subtitle: How to build and use the erlangpl script
 ### Download prebuilt script
 
 The easiest way to get started is to download a prebuilt `erlangpl` script
-([download link](https://erlang.pl/erlangpl.gz)).
+([download link](https://github.com/erlanglab/erlangpl/releases/download/0.6.0/erlangpl.tar.gz)).
 
 ### Build it manually
 
