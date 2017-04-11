@@ -25,7 +25,7 @@ download for the first time. Second time dependencies will be cached.
 $ git clone --recursive git@github.com:erlanglab/erlangpl.git
 $ cd erlangpl
 $ make rebar
-$ make build-ui
+$ make ui
 $ make
 $ ./bootstrap
 ```
