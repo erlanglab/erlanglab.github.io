@@ -1,8 +1,8 @@
-----
--layout: page
--title: Getting started
--subtitle: How to build and use the erlangpl script
-----
+---
+layout: page
+title: Getting started
+subtitle: How to build and use the erlangpl script
+---
 
 ### Download prebuilt script
 
