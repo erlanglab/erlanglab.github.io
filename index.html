@@ -1,109 +1,109 @@
 ---
 layout: landing
 ---
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>{{ site.title }}</h2>
-							<p>{{ site.description | markdownify }}</p>
-							<ul class="actions">
+                                <!-- Banner -->
+                                        <section id="banner">
+                                                <div class="inner">
+                                                        <h2>{{ site.title }}</h2>
+                                                        <p>{{ site.description | markdownify }}</p>
+                                                        <ul class="actions">
                 <li><a href="https://github.com/erlanglab/erlangpl" class="button special icon fa-github" style="background-color: #1F79B7;">Our GitHub</a></li>
                 <li><a href="/getting_started.html" class="button special icon fa-play" style="background-color: #8FBF47;">Getting Started</a></li>
-                <li><a href="https://github.com/erlanglab/erlangpl/releases/download/0.6.0/erlangpl.tar.gz" class="button special icon fa-download" style="background-color: #227A50;">Download</a></li>
-							</ul>
+                <li><a href="https://github.com/erlanglab/erlangpl/releases/download/0.6.1/erlangpl.tar.gz" class="button special icon fa-download" style="background-color: #227A50;">Download</a></li>
+                                                        </ul>
 
             <!-- Place this tag where you want the button to render. -->
             <a style="margin: auto;" class="github-button" href="https://github.com/erlanglab/erlangpl" data-icon="octicon-star" data-style="mega" data-count-href="/erlanglab/erlangpl/stargazers" data-count-api="/repos/erlanglab/erlangpl#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star erlanglab/erlangpl on GitHub">Star</a>
 
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
+                                                </div>
+                                                <a href="#one" class="more scrolly">Learn More</a>
+                                        </section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								  <h2>What is Erlang Performance Lab?</h2>
-								  <p>Tool for developers working with the Erlang VM (BEAM).<br />
+                                <!-- One -->
+                                        <section id="one" class="wrapper style1 special">
+                                                <div class="inner">
+                                                        <header class="major">
+                                                                  <h2>What is Erlang Performance Lab?</h2>
+                                                                  <p>Tool for developers working with the Erlang VM (BEAM).<br />
                     It helps with observing a system and its performance analysis.</p>
-							</header>
-							<ul class="icons major">
-								<li><a href="https://github.com/erlanglab/erlangpl" class="icon fa-github major style1"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.youtube.com/channel/UCGkcbu799cC1rtMaQtAajpg" class="icon fa-youtube major style2"><span class="label">YouTube</span></a></li>
-								<li><a href="https://twitter.com/erlanglab" class="icon fa-twitter major style3"><span class="label">Twitter</span></a></li>
-							</ul>
-						</div>
-					</section>
+                                                        </header>
+                                                        <ul class="icons major">
+                                                                <li><a href="https://github.com/erlanglab/erlangpl" class="icon fa-github major style1"><span class="label">GitHub</span></a></li>
+                                                                <li><a href="https://www.youtube.com/channel/UCGkcbu799cC1rtMaQtAajpg" class="icon fa-youtube major style2"><span class="label">YouTube</span></a></li>
+                                                                <li><a href="https://twitter.com/erlanglab" class="icon fa-twitter major style3"><span class="label">Twitter</span></a></li>
+                                                        </ul>
+                                                </div>
+                                        </section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
+                                <!-- Two -->
+                                        <section id="two" class="wrapper alt style2">
             <!-- DASHBOARD -->
             <section class="spotlight">
-							<div class="image"><img src="images/erlanglab_dashboard.png" alt="" /></div><div class="content">
-								<h2>Dashboard</h2>
-								<p>Gives high level overview of the current system throughput,
+                                                        <div class="image"><img src="images/erlanglab_dashboard.png" alt="" /></div><div class="content">
+                                                                <h2>Dashboard</h2>
+                                                                <p>Gives high level overview of the current system throughput,
                     process activities like spawns or exits, memory footprint
                     and Erlang runtime system settings.
                     It is a good starting point for any system exploration.
                     Live charts help observe trends in the recent history
                     and reason about the overall health of the system.
                 </p>
-							</div>
-						</section>
+                                                        </div>
+                                                </section>
 
             <!-- MESSAGE PASSING -->
             <section class="spotlight">
-							<div class="image"><img src="images/erlanglab_message_passing.png" alt="" /></div><div class="content">
-								<h2>Message passing graph</h2>
-								<p>In Erlang-based systems processes share data through message passing.
+                                                        <div class="image"><img src="images/erlanglab_message_passing.png" alt="" /></div><div class="content">
+                                                                <h2>Message passing graph</h2>
+                                                                <p>In Erlang-based systems processes share data through message passing.
                     If certain processes receive more messages than they can handle,
                     their inbox queue starts growing. Over time it can lead to bottlenecks.
                     The graph visualises which processes communicate extensively
                   allowing you to easily spot key places slowing down your application.
                 </p>
-							</div>
-						</section>
+                                                        </div>
+                                                </section>
 
             <!-- TRAFFIC -->
-						<section class="spotlight">
-							<div class="image"><img src="images/erlanglab_traffic.png" alt="" /></div><div class="content">
-								<h2>Traffic graph</h2>
-								<p>Gaining visibility into network traffic in distributed systems is of great
+                                                <section class="spotlight">
+                                                        <div class="image"><img src="images/erlanglab_traffic.png" alt="" /></div><div class="content">
+                                                                <h2>Traffic graph</h2>
+                                                                <p>Gaining visibility into network traffic in distributed systems is of great
                     importance as it helps to understand the behaviour of the entire system,
                     which can consist of more than one Erlang node.
                     Graphical representation of clustering helps grasp the inter-node traffic
                     patterns and allows displaying traffic data on a graph of nodes.
                 </p>
-							</div>
-						</section>
+                                                        </div>
+                                                </section>
 
             <!-- SUPERVISION TREE  -->
             <section class="spotlight">
-							<div class="image"><img src="images/erlanglab_st.png" alt="" /></div><div class="content">
-								<h2>Supervision tree</h2>
-								<p>Internal structure of any OTP application can be very complicated.
+                                                        <div class="image"><img src="images/erlanglab_st.png" alt="" /></div><div class="content">
+                                                                <h2>Supervision tree</h2>
+                                                                <p>Internal structure of any OTP application can be very complicated.
                   Supervision tree visualization may help understand it which
                   is crucial for designing efficient and fault tolerant system.
                   It also has learning value, showing basic relations between
                   workers and supervisors, giving foundation for reasoning
                   about whole architecture.
                 </p>
-							</div>
-						</section>
-					</section>
+                                                        </div>
+                                                </section>
+                                        </section>
 
-				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Interested in erlang.pl?</h2>
+                                <!-- CTA -->
+                                        <section id="cta" class="wrapper style4">
+                                                <div class="inner">
+                                                        <header>
+                                                                <h2>Interested in erlang.pl?</h2>
                 <p>If you would like to help with beta testing,<br />
                    download the tool and try it on your system.<br />
                    Don't forget to send us feedback!</p>
-							</header>
-							<ul class="actions vertical">
-								<li><a href="https://erlang.pl/erlangpl.gz" class="button fit special icon fa-download" style="background-color: #227A50;">Download</a></li>
-								<li><a href="mailto:info@erlang.pl" class="button fit">Feedback</a></li>
-							</ul>
-						</div>
-					</section>
+                                                        </header>
+                                                        <ul class="actions vertical">
+                                                                <li><a href="https://erlang.pl/erlangpl.gz" class="button fit special icon fa-download" style="background-color: #227A50;">Download</a></li>
+                                                                <li><a href="mailto:info@erlang.pl" class="button fit">Feedback</a></li>
+                                                        </ul>
+                                                </div>
+                                        </section>
